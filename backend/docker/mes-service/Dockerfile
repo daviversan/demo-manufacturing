@@ -1,7 +1,6 @@
 # Simple Node.js image for the MES mock backend
-FROM node:18-alpine
+FROM node:18-slim
 
-RUN mkdir -p /app
 WORKDIR /app
 
 COPY server.js /app/server.js
