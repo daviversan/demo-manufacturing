@@ -1,9 +1,10 @@
 # Simple Node.js image for the MES mock backend
 FROM node:18-alpine
 
+RUN mkdir -p /app
 WORKDIR /app
 
-COPY server.js .
+COPY server.js /app/server.js
 
 EXPOSE 9002
 
